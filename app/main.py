@@ -6,16 +6,21 @@ import uvicorn
 
 app = FastAPI()
 
+
 @app.get("/status")
 def status():
     return JSONResponse(content={"status": "ok"})
 
+
 @app.get("/hello")
 def hello():
     return PlainTextResponse("Welcome to my test site")
+
+
 @app.get("/about")
 def hello():
     return PlainTextResponse("This is a simple web site to test")
+
 
 # Optional: Run with `python hello_api.py`
 if __name__ == "__main__":
