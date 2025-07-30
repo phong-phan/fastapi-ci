@@ -18,7 +18,7 @@ def hello():
 
 
 @app.get("/about")
-def hello():
+def about():
     return PlainTextResponse("This is a simple web site to test")
 
 
